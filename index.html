@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<!-- <link rel="stylesheet" type="text/css" href="css/media.css"> -->
+		<script type="text/javascript" src="js/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Baby Comfort</title>
+  </head>
+  <body>
+    <a href="#main" id="top" class="to-top">Вверх</a>
+    <div class="modal-over">
+			<div class="modal-overlay" onclick="modalClose()"></div>
+			<div class="modal">
+				<span class="close" onclick="modalClose()">x</span>
+			</div>
+		</div>
+    <section id="main">
+        <header>
+            <div class="logo">
+                <a href="#">
+                    <img src="img/logo.png">
+                </a>
+            </div>
+            <div class="header-info">
+              <div class="social">
+                <ul class="contact-info">
+                  <li class="tele">+7 (775) 824 58 42</li>
+                  <li class="mail">babycomfort@mail.ru</li>
+                </ul>
+                <div class="social-icons">
+                  <a href="#"><img src="img/instagram.png" alt=""></a>
+                  <a href="#"><img src="img/facebook.png" alt=""></a>
+                  <a href="#"><img src="img/telegram.png" alt=""></a>
+                </div>
+              </div>
+              <div>
+                <img class="burger-menu" onclick="showMenu()" src="img/menu.png">
+                <ul id="menu" class="menu">
+                  <li class="current"><a href="#main">Главная</a></li>
+                  <li><a href="#collection">Коллекции</a></li>
+                  <li><a href="#popular">Популярное</a></li>
+                  <li><a href="#sales">Скидки</a></li>
+                  <li><a href="#testimonials">Отзывы</a></li>
+                  <li><a href="#contacts">Контакты</a></li>
+        				</ul>
+              </div>
+            </div>
+        </header>
+        <div class="main-title">
+          <img src="img/hipseat2.png" alt="">
+          <div class="text">
+            <h1>Модно.Удобно.Надежно.</h1>
+            <h3>Самое лучшее для детей</h3>
+            <a class="btn-coll" href="#contacts">заказать сейчас</a>
+          </div>
+        </div>
+    </section>
+    <section id="collection">
+      <div class="collection-detail">
+        <div class="collection-title">
+         <h1>Коллекции</h1>
+         <span></span>
+         <h5>Модная коллекция</h5>
+       </div>
+         <div class="containers">
+           <div class="container">
+            <img class="rect rect1" src="img/rect1.png" alt="">
+            <a href="#"><img class="pic pic1" src="img/hipseat3.png" alt=""></a>
+            <p>Эрго-хипситы</p>
+           </div>
+           <div class="container">
+            <img class="rect rect2" src="img/rect1.png" alt="">
+            <a href="#"><img class="pic pic2" src="img/cocoon.png" alt=""></a>
+            <p>Коконы для детей</p>
+           </div>
+           <div class="container">
+            <img class="rect rect3" src="img/rect1.png" alt="">
+            <a href="#"><img class="pic pic3" src="img/bumper.png" alt=""></a>
+            <p>Бортики, детское постельное белье</p>
+           </div>
+         </div>
+      </div>
+    </section>
+    <section id="popular">
+      <div class="popular-title">
+        <h1>Популярное</h1>
+        <span></span>
+    		<p>Количество ограничено</p>
+      </div>
+  		<ul>
+  			<li id="all" class="active">Все</li>
+  			<li id="hipseat">Эрго-хипситы</li>
+  			<li id="cocoon">Коконы для детей</li>
+  			<li id="bumper">Бортики</li>
+  		</ul>
+  		<div class="popular-items"></div>
+      <div class="btn">
+        <p><a id = "click" onclick = "FuncImages()" href="#popular">Еще</a></p>
+      </div>
+      <div class="btn-close">
+        <p><a id = "close" onclick = "CloseImg()" href="#popular">Закрыть</a></p>
+      </div>
+    </section>
+    <section id="sales">
+      <h1>Сезонные скидки</h1>
+      <span></span>
+      <p>Успей заказать Хипсит до конца акции и получи 10% скидку!</p>
+      <div class="gen-sales">
+        <div class="sales-title">
+          <p>Подарите незабываемые впечатления.</p>
+          <div class="sales-info">
+            <img src="img/toddler2.png" alt="">
+          </div>
+          <div class="btn-sales">
+            <a href="#contacts">Заказать со скидкой</a>
+          </div>
+        </div>
+        <div class="timer">
+          <div class="timer-info">
+            <p>До конца акции осталось:</p>
+          </div>
+          <div id="demo"></div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+      <h1 class="testimonials">Отзывы</h1>
+      <div class="slider-gen">
+        <div class="slider">
+          <div class="slider-unit">
+            <div class="user__img">
+              <img src="img/testi3.png" alt="">
+            </div>
+            <div class="user__name">
+              <h1>Айгерим Бакытбек</h1>
+            </div>
+            <div class="user__text">
+              <p>Очень удобный хипсит! Это просто спасение для нас с сыном! Быстрая доставка, приятный сервис. Спасибо вам! </p>
+            </div>
+          </div>
+        </div>
+        <div class="slider">
+          <div class="slider-unit">
+            <div class="user__img">
+              <img src="img/testi3.png" alt="">
+            </div>
+            <div class="user__name">
+              <h1>Айгерим Бакытбек</h1>
+            </div>
+            <div class="user__text">
+              <p>Очень удобный хипсит! Это просто спасение для нас с сыном! Быстрая доставка, приятный сервис. Спасибо вам! </p>
+            </div>
+          </div>
+        </div>
+        <div class="slider">
+          <div class="slider-unit">
+            <div class="user__img">
+              <img src="img/testi3.png" alt="">
+            </div>
+            <div class="user__name">
+              <h1>Айгерим Бакытбек</h1>
+            </div>
+            <div class="user__text">
+              <p>Очень удобный хипсит! Это просто спасение для нас с сыном! Быстрая доставка, приятный сервис. Спасибо вам! </p>
+            </div>
+          </div>
+        </div>
+        <div class="slider">
+          <div class="slider-unit">
+            <div class="user__img">
+              <img src="img/testi4.png" alt="">
+            </div>
+            <div class="user__name">
+              <h1>Мадина Сарсембай</h1>
+            </div>
+            <div class="user__text">
+              <p>Брала в подарок сестренке. Думала окажется ненужной вещью. Сестренка нарадоваться не может. Очень удобно! </p>
+            </div>
+          </div>
+          <!-- <div class="slider-unit">
+            <div class="user__img">
+              <img src="img/testi5.png" alt="">
+            </div>
+            <div class="user__name">
+              <h1>Индира Аманбаева</h1>
+            </div>
+            <div class="user__text">
+              <p>Послушав отзывы, на рождение второй дочери купила хипсит. Настолько удобно, гуляем теперь втроем с девочками. </p>
+            </div>
+          </div>
+          <div class="slider-unit">
+            <div class="user__img">
+              <img src="img/testi6.png" alt="">
+            </div>
+            <div class="user__name">
+              <h1>Газиза Кельдыбаева</h1>
+            </div>
+            <div class="user__text"
+              <p>Подарила на рождение племянника. Моя сноха в восторге от хипсита! Выходит в город только с ним.</p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <ul class="slider-dots">
+				<li id="0" class="current"></li>
+				<li id="1"></li>
+        <li id="2"></li>
+        <li id="3"></li>
+        <li id="4"></li>
+        <li id="5"></li>
+				<!-- <li id="2"></li> -->
+			</ul>
+      <span class="left"><b><</b></span>
+			<span class="right"><b>></b></span>
+
+
+    </section>
+    <section id="contacts">
+      <div class="footer-up">
+        <h1>Оформите заказ</h1>
+        <div class="form">
+  				<input type="text" name="" placeholder="Введите ваш номер телефона">
+  				<a href="#"><input type="submit" value="Заказать сейчас"></a>
+  			</div>
+      </div>
+      <div class="footer-down">
+        <div class="address">
+          <p><span>Tel:</span> +7 (775) 824 58 42</p>
+          <p><span>email:</span> babycomfort@mail.ru</p>
+          <p><span>web:</span> www.babycomfort.kz</p>
+          <p>Copyright © 2019 Baby Comfort.<br>Все права защищены</p>
+        </div>
+        <div class="social">
+					<div class="icons">
+            <a href="#"><img src="img/instagram2.png" alt=""></a>
+            <a href="#"><img src="img/facebook2.png" alt=""></a>
+            <a href="#"><img src="img/telegram2.png" alt=""></a>
+					</div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
